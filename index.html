@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Wedding</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-title">A & B</div>
+      <div class="brand-sub">Wedding • 20xx-xx-xx</div>
+    </div>
+
+    <nav class="nav">
+      <a href="#venue">Venue</a>
+      <a href="#rooms">Book Rooms</a>
+      <a href="#apartment">Apartment Details</a>
+      <a href="#getting-there">How to Get There</a>
+      <a href="#photos">Photos</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a class="btn" href="https://VENUE-BOOKING-LINK-HERE" target="_blank" rel="noopener">
+        Book on Venue Website
+      </a>
+      <div class="tiny">Last update: <span id="updated"></span></div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="hero">
+      <h1>We’re getting married 🎉</h1>
+      <p class="lead">
+        Welcome! Here you’ll find all details about the venue, accommodation, and how to get there.
+      </p>
+      <div class="chips">
+        <span class="chip">📍 City / Region</span>
+        <span class="chip">🗓 Date</span>
+        <span class="chip">⏰ Ceremony time</span>
+      </div>
+    </section>
+
+    <section id="venue" class="card">
+      <h2>Venue</h2>
+      <p>
+        We’ll celebrate at <strong>Venue Name</strong>. Add a short description here.
+      </p>
+      <p class="links">
+        <a href="https://VENUE-MAIN-PAGE-LINK-HERE" target="_blank" rel="noopener">Venue website</a>
+        <a href="https://VENUE-BOOKING-LINK-HERE" target="_blank" rel="noopener">Rooms & booking</a>
+      </p>
+
+      <!-- Optional map embed -->
+      <div class="map-wrap">
+        <iframe
+          title="Venue map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=VENUE%20ADDRESS%20HERE&output=embed">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="rooms" class="card">
+      <h2>Book Rooms</h2>
+      <p>
+        Rooms can be booked directly on the venue website. Use the link below:
+      </p>
+      <p>
+        <a class="btn-inline" href="https://VENUE-BOOKING-LINK-HERE" target="_blank" rel="noopener">
+          Open booking page →
+        </a>
+      </p>
+      <ul>
+        <li>Tip: mention a promo code if you have one.</li>
+        <li>Tip: mention check-in/out times if needed.</li>
+      </ul>
+    </section>
+
+    <section id="apartment" class="card">
+      <h2>Apartment Details</h2>
+      <p>
+        If you’re staying in the apartment / alternative accommodation, here are the details:
+      </p>
+      <ul>
+        <li><strong>Address:</strong> …</li>
+        <li><strong>Check-in:</strong> …</li>
+        <li><strong>Check-out:</strong> …</li>
+        <li><strong>Key pickup:</strong> …</li>
+        <li><strong>Parking:</strong> …</li>
+      </ul>
+      <p class="muted">
+        (You can also add a link to Airbnb/Booking if relevant.)
+      </p>
+    </section>
+
+    <section id="getting-there" class="card">
+      <h2>How to Get There</h2>
+      <h3>By car</h3>
+      <p>Add driving tips, parking, etc.</p>
+
+      <h3>By train / plane</h3>
+      <p>Add nearest station/airport and the best connection.</p>
+
+      <h3>Local transport</h3>
+      <p>Taxi apps, bus routes, or shuttle info.</p>
+
+      <p class="links">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=VENUE%20ADDRESS%20HERE"
+           target="_blank" rel="noopener">Open directions in Google Maps</a>
+      </p>
+    </section>
+
+    <section id="photos" class="card">
+      <h2>Photos</h2>
+      <p>Drop a few pictures here (venue, you two, area).</p>
+
+      <div class="gallery">
+        <img src="images/photo1.jpg" alt="Photo 1" loading="lazy">
+        <img src="images/photo2.jpg" alt="Photo 2" loading="lazy">
+        <img src="images/photo3.jpg" alt="Photo 3" loading="lazy">
+        <img src="images/photo4.jpg" alt="Photo 4" loading="lazy">
+      </div>
+      <p class="muted">Create an <code>images/</code> folder and put your JPG/PNG files there.</p>
+    </section>
+
+    <section id="faq" class="card">
+      <h2>FAQ</h2>
+      <details>
+        <summary>What should I wear?</summary>
+        <p>Add dress code info.</p>
+      </details>
+      <details>
+        <summary>Can I bring a plus one / kids?</summary>
+        <p>Add your policy here.</p>
+      </details>
+      <details>
+        <summary>Any gifts?</summary>
+        <p>Add registry info or “no gifts needed” message.</p>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <div>Contact: your-email / phone (optional)</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("updated").textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
