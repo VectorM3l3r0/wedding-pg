@@ -60,26 +60,49 @@ function setupLanguageSwitcher(dict) {
 function setupAudio(dict) {
   const audio = document.getElementById("bg-audio");
   const toggle = document.getElementById("audio-toggle");
+  const enter = document.getElementById("enter");
+  const enterBtn = document.getElementById("enter-btn");
 
-  // Browsers often block autoplay. We'll start when user clicks the toggle.
-  toggle.addEventListener("click", async () => {
+  async function turnOn() {
+    await audio.play();
+    state.audioOn = true;
+    toggle.classList.add("on");
+    applyTranslations(dict, state.lang);
+  }
+
+  function turnOff() {
+    audio.pause();
+    state.audioOn = false;
+    toggle.classList.remove("on");
+    applyTranslations(dict, state.lang);
+  }
+
+  // Enter overlay starts music
+  async function enterSite() {
     try {
-      if (!state.audioOn) {
-        await audio.play();
-        state.audioOn = true;
-        toggle.classList.add("on");
-      } else {
-        audio.pause();
-        state.audioOn = false;
-        toggle.classList.remove("on");
-      }
-      applyTranslations(dict, state.lang);
+      await turnOn();
     } catch (e) {
-      // If audio file missing or blocked
+      // autoplay still blocked or file missing
       state.audioOn = false;
       toggle.classList.remove("on");
       applyTranslations(dict, state.lang);
-      alert("Audio couldn’t play. Check that assets/video-games-instrumental.mp3 exists and try again.");
+    }
+    if (enter) enter.classList.add("hidden");
+  }
+
+  if (enterBtn) enterBtn.addEventListener("click", enterSite);
+  if (enter) enter.addEventListener("click", (e) => {
+    // clicking outside button also works
+    if (e.target === enter) enterSite();
+  });
+
+  // Top toggle still works
+  toggle.addEventListener("click", async () => {
+    try {
+      if (!state.audioOn) await turnOn();
+      else turnOff();
+    } catch (e) {
+      alert("Audio couldn’t play. Check assets/video-games-instrumental.mp3");
     }
   });
 }
@@ -92,4 +115,5 @@ function setupAudio(dict) {
   setupLanguageSwitcher(dict);
   setupAudio(dict);
 })();
+
 
