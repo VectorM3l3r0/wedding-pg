@@ -1,6 +1,6 @@
 :root{
   --bg:#f7f4ef;                 /* warm ivory */
-  --card:rgba(255,255,255,.82); /* frosted white */
+  --card: rgba(255,255,255,.55); /* frosted white */
   --line:rgba(17,24,39,.12);    /* soft border */
   --text:#111827;               /* near-black */
   --muted:rgba(17,24,39,.62);   /* muted */
@@ -266,6 +266,7 @@ li{margin:6px 0}
 .enter * { pointer-events: auto; }
 .enter__card { position: relative; z-index: 10000; }
 #enter-btn { position: relative; z-index: 10001; cursor: pointer; }
+
 
 
 
