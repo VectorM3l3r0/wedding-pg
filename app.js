@@ -63,48 +63,57 @@ function setupAudio(dict) {
   const enter = document.getElementById("enter");
   const enterBtn = document.getElementById("enter-btn");
 
+  if (!audio) {
+    console.error("Missing #bg-audio element");
+    return;
+  }
+
   async function turnOn() {
     await audio.play();
     state.audioOn = true;
-    toggle.classList.add("on");
+    if (toggle) toggle.classList.add("on");
     applyTranslations(dict, state.lang);
   }
 
   function turnOff() {
     audio.pause();
     state.audioOn = false;
-    toggle.classList.remove("on");
+    if (toggle) toggle.classList.remove("on");
     applyTranslations(dict, state.lang);
   }
 
-  // Enter overlay starts music
   async function enterSite() {
     try {
       await turnOn();
     } catch (e) {
-      // autoplay still blocked or file missing
       state.audioOn = false;
-      toggle.classList.remove("on");
+      if (toggle) toggle.classList.remove("on");
       applyTranslations(dict, state.lang);
     }
+
     if (enter) enter.classList.add("hidden");
   }
 
-  if (enterBtn) enterBtn.addEventListener("click", enterSite);
-  if (enter) enter.addEventListener("click", (e) => {
-    // clicking outside button also works
-    if (e.target === enter) enterSite();
-  });
+  if (enterBtn) {
+    enterBtn.addEventListener("click", enterSite);
+  }
 
-  // Top toggle still works
-  toggle.addEventListener("click", async () => {
-    try {
-      if (!state.audioOn) await turnOn();
-      else turnOff();
-    } catch (e) {
-      alert("Audio couldn’t play. Check assets/video-games-instrumental.mp3");
-    }
-  });
+  if (enter) {
+    enter.addEventListener("click", (e) => {
+      if (e.target === enter) enterSite();
+    });
+  }
+
+  if (toggle) {
+    toggle.addEventListener("click", async () => {
+      try {
+        if (!state.audioOn) await turnOn();
+        else turnOff();
+      } catch (e) {
+        alert("Audio couldn’t play. Check assets/video-games-instrumental.mp3");
+      }
+    });
+  }
 }
 
 (async function init() {
@@ -115,6 +124,7 @@ function setupAudio(dict) {
   setupLanguageSwitcher(dict);
   setupAudio(dict);
 })();
+
 
 
 
