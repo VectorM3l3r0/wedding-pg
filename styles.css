@@ -14,6 +14,10 @@
   --font-head: "Cinzel", "Playfair Display", Georgia, serif;
 }
 
+#info p {
+  white-space: pre-line;
+}
+
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -271,6 +275,7 @@ li{margin:6px 0}
 .enter * { pointer-events: auto; }
 .enter__card { position: relative; z-index: 10000; }
 #enter-btn { position: relative; z-index: 10001; cursor: pointer; }
+
 
 
 
