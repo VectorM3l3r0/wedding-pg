@@ -207,3 +207,10 @@ li{margin:6px 0}
 .enter__title{ font-weight:800; font-size:22px; margin-bottom:6px; }
 .enter__sub{ color: rgba(255,255,255,.75); margin-bottom:14px; }
 .enter__hint{ color: rgba(255,255,255,.55); font-size:12px; margin-top:10px; }
+
+/* FIX: make overlay/button clickable */
+.enter { pointer-events: auto; }
+.enter * { pointer-events: auto; }
+.enter__card { position: relative; z-index: 10000; }
+#enter-btn { position: relative; z-index: 10001; cursor: pointer; }
+
