@@ -5,7 +5,7 @@ const HOTEL_URL = "https://www.palacalexandrinum.pl/"; // <-- replace with your 
 
 const state = {
   lang: localStorage.getItem("wedding_lang") || DEFAULT_LANG,
-  audioOn: false
+  audioOn: true
 };
 
 async function loadTranslations() {
@@ -92,3 +92,4 @@ function setupAudio(dict) {
   setupLanguageSwitcher(dict);
   setupAudio(dict);
 })();
+
