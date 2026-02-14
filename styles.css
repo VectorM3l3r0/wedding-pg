@@ -28,7 +28,7 @@ body::before{
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: url("assets/palac-alexandrinum.jpg") center/cover no-repeat;
+  background: url("./assets/palac-alexandrinum.jpg") center/cover no-repeat;
   filter: saturate(1.08) contrast(1.05) brightness(1);
   transform: scale(1.02);
   pointer-events: none;
@@ -230,6 +230,7 @@ li{margin:6px 0}
 .enter * { pointer-events: auto; }
 .enter__card { position: relative; z-index: 10000; }
 #enter-btn { position: relative; z-index: 10001; cursor: pointer; }
+
 
 
 
