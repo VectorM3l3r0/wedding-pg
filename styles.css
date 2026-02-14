@@ -132,12 +132,27 @@ h1,h2,h3{
   font-family: var(--font-head);
   font-weight: 700;
   letter-spacing: .8px;
-  color: var(--accent2);
+  background: linear-gradient(135deg, #d4af37, #b08d2a, #f1d77a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-h1{font-size:36px}
-h2{font-size:24px}
-h3{font-size:16px; color:var(--text)}
+h1{
+  font-size:36px;
+  background: linear-gradient(135deg, #d4af37, #b08d2a, #f1d77a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2{
+  font-size:24px;
+  color: var(--accent);
+}
+
+h3{
+  font-size:16px;
+  color: var(--text);
+}
 .lead{color:var(--muted); margin:0 0 14px; font-size:16px; line-height:1.5}
 
 .hero__facts{display:flex; gap:12px; flex-wrap:wrap; margin:12px 0 16px}
@@ -251,6 +266,7 @@ li{margin:6px 0}
 .enter * { pointer-events: auto; }
 .enter__card { position: relative; z-index: 10000; }
 #enter-btn { position: relative; z-index: 10001; cursor: pointer; }
+
 
 
 
