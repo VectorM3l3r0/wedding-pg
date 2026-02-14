@@ -63,8 +63,8 @@
    "info.title": "Dodatkowe informacje",
     "info.adultsOnly.title": "Przyjęcie tylko dla dorosłych",
     "info.adultsOnly.text": "Uprzejmie informujemy, że uroczystość ma charakter wyłącznie dla osób dorosłych.",
-    "info.dress.title": "Dress code",
-    "info.dress.text": "Uprzejmie prosimy, aby goście nie wybierali bieli ani odcieni bieli — ten kolor zarezerwowany jest dla Panny Młodej.",
+    "info.dress.title": "DRESS CODE: BLACK TIE / COCKTAIL",
+    "info.dress.text": "Prosimy o elegancki strój wieczorowy.\n\nPanowie: smoking z muszką (preferowany) lub elegancki, ciemny garnitur z krawatem bądź muchą.\n\nPanie: długa suknia wieczorowa, elegancka długość midi lub szykowna sukienka koktajlowa.\n\nUprzejmie prosimy, aby kolor biały oraz ecru pozostawić Pannie Młodej.",
 
     "footer.made": "Do zobaczenia!"
   },
@@ -133,8 +133,8 @@
    "info.title": "Additional information",
     "info.adultsOnly.title": "Adults-only celebration",
     "info.adultsOnly.text": "We kindly inform you that the celebration will be adults-only.",
-    "info.dress.title": "Dress code",
-    "info.dress.text": "We kindly ask guests not to choose white or shades of white — this color is reserved for the Bride.",
+    "info.dress.title": "DRESS CODE: BLACK TIE / COCKTAIL",
+    "info.dress.text": "We kindly invite you to dress in elegant evening attire.\n\nGentlemen: tuxedo with a bow tie (preferred) or a dark formal suit with tie or bow tie.\n\nLadies: floor-length evening gown, elegant midi length, or a refined cocktail dress.\n\nWe kindly ask guests to leave white and ecru exclusively for the Bride.",
 
     "footer.made": "See you there!"
   },
@@ -203,12 +203,13 @@
    "info.title": "Información adicional",
   "info.adultsOnly.title": "Celebración solo para adultos",
   "info.adultsOnly.text": "Les informamos amablemente que la celebración será exclusivamente para adultos.",
-  "info.dress.title": "Código de vestimenta",
-  "info.dress.text": "Les pedimos amablemente que eviten vestir de blanco o tonos similares — este color está reservado para la Novia.",
+  "info.dress.title": "CÓDIGO DE VESTIMENTA: BLACK TIE / COCKTAIL",
+  "info.dress.text": "Les invitamos a vestir con elegancia para la ocasión.\n\nCaballeros: esmoquin con pajarita (preferido) o traje oscuro formal con corbata o pajarita.\n\nSeñoras: vestido largo de noche, vestido midi elegante o vestido de cóctel sofisticado.\n\nLes pedimos amablemente que dejen el blanco y el ecru exclusivamente para la Novia.",
 
     
     "footer.made": "¡Nos vemos!"
   }
 }
+
 
 
