@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anna & Victor — 27.06.2026 — Pałac Alexandrinum</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0f172a" />
+</head>
+
+<body>
+  <!-- Background media -->
+  <div class="bg">
+    <img class="bg-palace" src="assets/palac-alexandrinum.jpg" alt="Pałac Alexandrinum" />
+    <div class="bg-overlay"></div>
+  </div>
+
+  <!-- Audio (you must provide the file) -->
+  <audio id="bg-audio" src="assets/video-games-instrumental.mp3" loop></audio>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand__title">Anna & Victor</span>
+      <span class="brand__date">27/06/2026 • Pałac Alexandrinum</span>
+    </div>
+
+    <div class="right">
+      <div class="lang">
+        <button class="lang__btn" data-lang="pl" aria-label="Polski">PL</button>
+        <button class="lang__btn" data-lang="en" aria-label="English">EN</button>
+        <button class="lang__btn" data-lang="es" aria-label="Español">ES</button>
+      </div>
+
+      <button id="audio-toggle" class="audio" type="button">
+        <span class="audio__dot" aria-hidden="true"></span>
+        <span data-i18n="audio.off">Muzyka: wyłączona</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero card" id="start">
+      <div class="hero__left">
+        <h1 data-i18n="hero.title">Zaproszenie na ślub</h1>
+        <p class="lead" data-i18n="hero.subtitle">
+          Z radością zapraszamy na nasz ślub i wesele!
+        </p>
+
+        <div class="hero__facts">
+          <div class="fact">
+            <div class="fact__k" data-i18n="hero.when.k">Kiedy</div>
+            <div class="fact__v" data-i18n="hero.when.v">27 czerwca 2026</div>
+          </div>
+          <div class="fact">
+            <div class="fact__k" data-i18n="hero.where.k">Gdzie</div>
+            <div class="fact__v" data-i18n="hero.where.v">Pałac Alexandrinum (okolice Wołomina)</div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn" href="#plan" data-i18n="nav.plan">Plan dnia</a>
+          <a class="btn btn--ghost" href="#dojazd" data-i18n="nav.directions">Jak dojechać</a>
+          <a class="btn btn--ghost" href="#zagranica" data-i18n="nav.fromabroad">Z zagranicy</a>
+          <a class="btn btn--accent" href="#hotel" data-i18n="nav.hotel">Hotel i płatność</a>
+        </div>
+
+        <p class="small" data-i18n="hero.note">
+          Jeśli masz pytania — napisz do nas. Do zobaczenia!
+        </p>
+      </div>
+
+      <div class="hero__right">
+        <div class="photo">
+          <img src="assets/nasze-zdjecie.jpg" alt="Anna i Victor" />
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="plan">
+      <h2 data-i18n="plan.title">Plan dnia</h2>
+      <div class="timeline">
+        <div class="item">
+          <div class="time">15:00</div>
+          <div class="desc" data-i18n="plan.1">Przyjazd gości / zameldowanie</div>
+        </div>
+        <div class="item">
+          <div class="time">16:00</div>
+          <div class="desc" data-i18n="plan.2">Ceremonia</div>
+        </div>
+        <div class="item">
+          <div class="time">17:00</div>
+          <div class="desc" data-i18n="plan.3">Toast i zdjęcia</div>
+        </div>
+        <div class="item">
+          <div class="time">18:00</div>
+          <div class="desc" data-i18n="plan.4">Kolacja i przyjęcie</div>
+        </div>
+      </div>
+      <p class="small" data-i18n="plan.note">
+        Godziny są orientacyjne — finalny plan prześlemy bliżej terminu.
+      </p>
+    </section>
+
+    <section class="card" id="miejsce">
+      <h2 data-i18n="place.title">Miejsce</h2>
+      <p data-i18n="place.p1">
+        Spotykamy się w Pałacu Alexandrinum — eleganckim obiekcie hotelowo‑eventowym pod Wołominem.
+      </p>
+
+      <div class="grid2">
+        <div class="box">
+          <h3 data-i18n="place.addrTitle">Adres</h3>
+          <p class="mono">
+            <span data-i18n="place.addrLine1">Pałac Alexandrinum</span><br/>
+            <span data-i18n="place.addrLine2">okolice Wołomina, Polska</span>
+          </p>
+
+          <a class="link" id="maps-link" target="_blank" rel="noopener">
+            <span data-i18n="place.openMaps">Otwórz w Google Maps</span> →
+          </a>
+        </div>
+
+        <div class="box">
+          <h3 data-i18n="place.tipsTitle">Wskazówki</h3>
+          <ul>
+            <li data-i18n="place.tip1">Na miejscu jest parking.</li>
+            <li data-i18n="place.tip2">Warto zabrać wygodne buty (teren zielony).</li>
+            <li data-i18n="place.tip3">Recepcja pomoże z zameldowaniem i pokojami.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="dojazd">
+      <h2 data-i18n="directions.title">Jak dojechać</h2>
+      <p data-i18n="directions.p1">
+        Najwygodniej samochodem lub taksówką. Jeśli jedziesz transportem publicznym, dojedź w okolice Wołomina/Sulejówka i podjedź taksówką do pałacu.
+      </p>
+
+      <div class="grid2">
+        <div class="box">
+          <h3 data-i18n="directions.carTitle">Samochodem (z Warszawy)</h3>
+          <ol>
+            <li data-i18n="directions.car1">Kieruj się w stronę Wołomina.</li>
+            <li data-i18n="directions.car2">Dalej jedź zgodnie z nawigacją do Pałacu Alexandrinum.</li>
+            <li data-i18n="directions.car3">Parking znajduje się przy obiekcie.</li>
+          </ol>
+        </div>
+
+        <div class="box">
+          <h3 data-i18n="directions.trainTitle">Pociągiem / komunikacją</h3>
+          <ul>
+            <li data-i18n="directions.pt1">Dołącz do trasy pociągowej w kierunku Wołomina / Sulejówka.</li>
+            <li data-i18n="directions.pt2">Z dworca weź taksówkę/bolt do pałacu.</li>
+            <li data-i18n="directions.pt3">Jeśli chcesz — damy rekomendację najlepszego punktu przesiadki.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="zagranica">
+      <h2 data-i18n="fromabroad.title">Jak dojechać z zagranicy</h2>
+
+      <div class="grid2">
+        <div class="box">
+          <h3 data-i18n="fromabroad.chopinTitle">Lotnisko Chopina (WAW)</h3>
+          <ul>
+            <li data-i18n="fromabroad.chopin1">Najprościej: taksówka/uber prosto do Pałacu Alexandrinum.</li>
+            <li data-i18n="fromabroad.chopin2">Alternatywnie: dojazd do centrum Warszawy i dalej taxi do pałacu.</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3 data-i18n="fromabroad.modlinTitle">Lotnisko Modlin (WMI)</h3>
+          <ul>
+            <li data-i18n="fromabroad.modlin1">Najprościej: transfer/taksówka do Warszawy, potem taxi do pałacu.</li>
+            <li data-i18n="fromabroad.modlin2">Jeśli jedziesz transportem publicznym: do Warszawy, potem dalej zgodnie z sekcją „Jak dojechać”.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="small" data-i18n="fromabroad.note">
+        Jeśli chcesz, podeślij nam numer lotu — pomożemy dobrać najwygodniejszą trasę.
+      </p>
+    </section>
+
+    <section class="card" id="hotel">
+      <h2 data-i18n="hotel.title">Hotel i płatność</h2>
+      <p data-i18n="hotel.p1">
+        Jeśli chcesz nocować na miejscu — zarezerwuj pokój w hotelu Pałacu Alexandrinum.
+      </p>
+
+      <div class="box">
+        <p class="small" data-i18n="hotel.p2">
+          Kliknij poniżej, aby przejść do rezerwacji/płatności:
+        </p>
+
+        <a class="btn btn--accent" id="hotel-link" target="_blank" rel="noopener">
+          <span data-i18n="hotel.btn">Rezerwacja i płatność za hotel</span> →
+        </a>
+
+        <p class="small" data-i18n="hotel.code">
+          W uwagach do rezerwacji wpisz: “Anna & Victor Wedding” (jeśli ustalimy blok).
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="small">
+        <span data-i18n="footer.made">Do zobaczenia!</span> ❤️
+      </p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
