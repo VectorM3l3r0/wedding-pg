@@ -185,3 +185,25 @@ li{margin:6px 0}
 }
 
 .footer{margin-top:18px; text-align:center}
+
+.enter{
+  position:fixed; inset:0; z-index:9999;
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(2,6,23,.72);
+  backdrop-filter: blur(10px);
+  transition: opacity .45s ease, visibility .45s ease;
+}
+.enter.hidden{ opacity:0; visibility:hidden; pointer-events:none; }
+
+.enter__card{
+  text-align:center;
+  padding:22px 20px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(15,23,42,.70);
+  box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  width:min(420px, calc(100% - 32px));
+}
+.enter__title{ font-weight:800; font-size:22px; margin-bottom:6px; }
+.enter__sub{ color: rgba(255,255,255,.75); margin-bottom:14px; }
+.enter__hint{ color: rgba(255,255,255,.55); font-size:12px; margin-top:10px; }
