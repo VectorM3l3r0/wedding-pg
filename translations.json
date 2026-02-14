@@ -17,7 +17,7 @@
     "nav.hotel": "Hotel i płatność",
 
     "plan.title": "Plan dnia",
-    "plan.1": "Przyjazd gości / zameldowanie",
+    "plan.1": "Przyjazd gości / zameldowanie (dotyczy gości z rezerwacją noclegu w Pałacu)"
     "plan.2": "Ceremonia",
     "plan.3": "Toast i zdjęcia",
     "plan.4": "Kolacja i przyjęcie",
@@ -87,7 +87,7 @@
     "nav.hotel": "Hotel & payment",
 
     "plan.title": "Schedule",
-    "plan.1": "Guest arrival / check‑in",
+    "plan.1": "Guest arrival / hotel check-in (for guests with on-site accommodation)",
     "plan.2": "Ceremony",
     "plan.3": "Toast & photos",
     "plan.4": "Dinner & reception",
@@ -157,7 +157,7 @@
     "nav.hotel": "Hotel y pago",
 
     "plan.title": "Programa",
-    "plan.1": "Llegada / check‑in",
+    "plan.1": "Llegada de invitados / check-in (para invitados con reserva en el hotel)",
     "plan.2": "Ceremonia",
     "plan.3": "Brindis y fotos",
     "plan.4": "Cena y celebración",
@@ -210,6 +210,7 @@
     "footer.made": "¡Nos vemos!"
   }
 }
+
 
 
 
