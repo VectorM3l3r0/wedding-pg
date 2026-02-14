@@ -21,11 +21,14 @@ body{
 }
 
 .bg{
-  position:fixed;
-  inset:0;
-  z-index:0;
-  pointer-events:none;   /* <-- THIS is the important line */
+  position: fixed;
+  inset: 0;
+  z-index: -2;        /* behind content */
+  pointer-events: none;
 }
+
+.topbar, .wrap { position: relative; z-index: 1; }
+
 .bg-palace{
   width:100%; height:100%;
   object-fit:cover;
@@ -216,6 +219,7 @@ li{margin:6px 0}
 .enter * { pointer-events: auto; }
 .enter__card { position: relative; z-index: 10000; }
 #enter-btn { position: relative; z-index: 10001; cursor: pointer; }
+
 
 
 
