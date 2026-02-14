@@ -17,7 +17,7 @@
     "nav.hotel": "Hotel i płatność",
 
     "plan.title": "Plan dnia",
-    "plan.1": "Przyjazd gości / zameldowanie (dotyczy gości z rezerwacją noclegu w Pałacu)"
+    "plan.1": "Przyjazd gości / zameldowanie (dotyczy gości z rezerwacją noclegu w Pałacu)",
     "plan.2": "Ceremonia",
     "plan.3": "Toast i zdjęcia",
     "plan.4": "Kolacja i przyjęcie",
@@ -210,6 +210,7 @@
     "footer.made": "¡Nos vemos!"
   }
 }
+
 
 
 
