@@ -60,6 +60,13 @@
     "hotel.btn": "Rezerwacja i płatność za hotel",
     "hotel.code": "W uwagach do rezerwacji wpisz: “Anna & Victor Wedding” (jeśli ustalimy blok).",
 
+    "info.title": "Dodatkowe informacje",
+    "info.adultsOnly.title": "Przyjęcie tylko dla dorosłych",
+    "info.adultsOnly.text": "Uprzejmie prosimy, aby nasze wesele było wydarzeniem wyłącznie dla dorosłych. Dziękujemy za zrozumienie i liczymy na wspólny, spokojny wieczór.",
+    "info.dress.title": "Dress code",
+    "info.dress.text": "Uprzejmie prosimy o niezakładanie koloru białego, aby panna młoda mogła zabłysnąć w tym wyjątkowym dniu.",
+
+
     "footer.made": "Do zobaczenia!"
   },
 
@@ -123,6 +130,13 @@
     "hotel.p2": "Click below to go to booking/payment:",
     "hotel.btn": "Hotel booking & payment",
     "hotel.code": "In booking notes use: “Anna & Victor Wedding” (if we set a room block).",
+
+    "info.title": "Additional information",
+    "info.adultsOnly.title": "Adults-only celebration",
+    "info.adultsOnly.text": "We kindly request that our wedding celebration be adults-only. We hope you understand and can enjoy a relaxed evening with us.",
+    "info.dress.title": "Dress code",
+    "info.dress.text": "We kindly ask our guests to avoid wearing white, so that the bride can shine on this special day.",
+
 
     "footer.made": "See you there!"
   },
@@ -188,6 +202,14 @@
     "hotel.btn": "Reserva y pago del hotel",
     "hotel.code": "En notas de reserva escribe: “Anna & Victor Wedding” (si definimos un bloque).",
 
+    "info.title": "Información adicional",
+    "info.adultsOnly.title": "Celebración solo para adultos",
+    "info.adultsOnly.text": "Les pedimos amablemente que nuestra celebración sea solo para adultos. Gracias por su comprensión y esperamos compartir una velada relajada juntos.",
+    "info.dress.title": "Código de vestimenta",
+    "info.dress.text": "Les pedimos amablemente que eviten vestir de blanco, para que la novia pueda brillar en este día tan especial.",
+
+    
     "footer.made": "¡Nos vemos!"
   }
 }
+
