@@ -1,7 +1,7 @@
 const DEFAULT_LANG = "pl";
 
 const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Pa%C5%82ac%20Alexandrinum";
-const HOTEL_URL = "https://www.palacalexandrinum.pl/"; // <-- replace with your exact booking/payment link if you have it
+const HOTEL_URL = "https://www.palac-alexandrinum.pl/en/packages/price-of-the-day-flexible-offer/"; // <-- replace with your exact booking/payment link if you have it
 
 const state = {
   lang: localStorage.getItem("wedding_lang") || DEFAULT_LANG,
@@ -115,5 +115,6 @@ function setupAudio(dict) {
   setupLanguageSwitcher(dict);
   setupAudio(dict);
 })();
+
 
 
