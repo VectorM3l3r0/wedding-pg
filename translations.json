@@ -58,7 +58,7 @@
     "hotel.p1": "Jeśli chcesz nocować na miejscu — zarezerwuj pokój w hotelu Pałacu Alexandrinum.",
     "hotel.p2": "Kliknij poniżej, aby przejść do rezerwacji/płatności:",
     "hotel.btn": "Rezerwacja i płatność za hotel",
-    "hotel.code": "W uwagach do rezerwacji wpisz: “Anna & Victor Wedding” (jeśli ustalimy blok).",
+    "hotel.code": "Aby skorzystać ze zniżki, otwórz link do rezerwacji i przejdź do opcji „Zarezerwuj pokój”.\n\nWybierz datę nocy weselnej, a następnie w górnej części formularza wpisz kod: AV27.06.26.\n\nZniżka zostanie naliczona automatycznie.",
 
    "info.title": "Dodatkowe informacje",
     "info.adultsOnly.title": "Przyjęcie tylko dla dorosłych",
@@ -128,7 +128,7 @@
     "hotel.p1": "If you’d like to stay on site, book a room at the palace hotel.",
     "hotel.p2": "Click below to go to booking/payment:",
     "hotel.btn": "Hotel booking & payment",
-    "hotel.code": "In booking notes use: “Anna & Victor Wedding” (if we set a room block).",
+    "hotel.code": "To receive the wedding discount, open the booking link and select “Reserve a room”.\n\nChoose the wedding night date and enter the code AV27.06.26 at the top of the booking page.\n\nThe discount will be applied automatically.",
 
    "info.title": "Additional information",
     "info.adultsOnly.title": "Adults-only celebration",
@@ -198,7 +198,7 @@
     "hotel.p1": "Si quieres alojarte allí, reserva una habitación en el hotel del palacio.",
     "hotel.p2": "Haz clic abajo para ir a la reserva/pago:",
     "hotel.btn": "Reserva y pago del hotel",
-    "hotel.code": "En notas de reserva escribe: “Anna & Victor Wedding” (si definimos un bloque).",
+    "hotel.code": "Para aplicar el descuento, abre el enlace de reserva y selecciona “Reservar habitación”.\n\nElige la fecha de la noche de la boda e introduce el código AV27.06.26 en la parte superior de la página.\n\nEl descuento se aplicará automáticamente.",
 
    "info.title": "Información adicional",
   "info.adultsOnly.title": "Celebración solo para adultos",
@@ -210,6 +210,7 @@
     "footer.made": "¡Nos vemos!"
   }
 }
+
 
 
 
