@@ -248,6 +248,10 @@ li{margin:6px 0}
 
 .footer{margin-top:18px; text-align:center}
 
+#hotel .small {
+  white-space: pre-line;
+}
+
 .enter{
   position:fixed; inset:0; z-index:9999;
   display:flex; align-items:center; justify-content:center;
@@ -275,6 +279,7 @@ li{margin:6px 0}
 .enter * { pointer-events: auto; }
 .enter__card { position: relative; z-index: 10000; }
 #enter-btn { position: relative; z-index: 10001; cursor: pointer; }
+
 
 
 
