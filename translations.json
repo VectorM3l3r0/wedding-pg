@@ -58,7 +58,7 @@
     "hotel.p1": "Jeśli chcesz nocować na miejscu — zarezerwuj pokój w hotelu Pałacu Alexandrinum.",
     "hotel.p2": "Kliknij poniżej, aby przejść do rezerwacji/płatności:",
     "hotel.btn": "Rezerwacja i płatność za hotel",
-    "hotel.code": "Aby skorzystać ze zniżki, otwórz link do rezerwacji i przejdź do opcji „Zarezerwuj pokój”.\n\nWybierz datę nocy weselnej, a następnie w górnej części formularza wpisz kod: AV27.06.26.\n\nZniżka zostanie naliczona automatycznie.",
+    "hotel.code": "Aby skorzystać ze zniżki weselnej, otwórz link do rezerwacji i wybierz opcję „Promo/Voucher”.\n\nWpisz kod AV27.06.2026 w górnej części strony rezerwacji.\n\nZniżka zostanie naliczona automatycznie. Następnie wybierz daty oraz pokój.",
 
    "info.title": "Dodatkowe informacje",    
     "info.dress.title": "DRESS CODE: BLACK TIE / COCKTAIL",
@@ -126,7 +126,7 @@
     "hotel.p1": "If you’d like to stay on site, book a room at the palace hotel.",
     "hotel.p2": "Click below to go to booking/payment:",
     "hotel.btn": "Hotel booking & payment",
-    "hotel.code": "To receive the wedding discount, open the booking link and select “Reserve a room”.\n\nChoose the wedding night date and enter the code AV27.06.26 at the top of the booking page.\n\nThe discount will be applied automatically.",
+    "hotel.code": "To receive the wedding discount, open the booking link and select “Promo/Voucher”.\n\nEnter the code AV27.06.2026 at the top of the booking page.\n\nThe discount will be applied automatically. Then select the dates and room.",
 
    "info.title": "Additional information",
     "info.dress.title": "DRESS CODE: BLACK TIE / COCKTAIL",
@@ -194,7 +194,7 @@
     "hotel.p1": "Si quieres alojarte allí, reserva una habitación en el hotel del palacio.",
     "hotel.p2": "Haz clic abajo para ir a la reserva/pago:",
     "hotel.btn": "Reserva y pago del hotel",
-    "hotel.code": "Para aplicar el descuento, abre el enlace de reserva y selecciona “Reservar habitación”.\n\nElige la fecha de la noche de la boda e introduce el código AV27.06.26 en la parte superior de la página.\n\nEl descuento se aplicará automáticamente.",
+    "hotel.code": "Para recibir el descuento de boda, abre el enlace de reserva y selecciona “Promo/Voucher”.\n\nIntroduce el código AV27.06.2026 en la parte superior de la página de reserva.\n\nEl descuento se aplicará automáticamente. Luego selecciona las fechas y la habitación.",
 
    "info.title": "Información adicional",
   "info.dress.title": "CÓDIGO DE VESTIMENTA: BLACK TIE / COCKTAIL",
@@ -204,6 +204,7 @@
     "footer.made": "¡Nos vemos!"
   }
 }
+
 
 
 
