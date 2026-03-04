@@ -60,9 +60,7 @@
     "hotel.btn": "Rezerwacja i płatność za hotel",
     "hotel.code": "Aby skorzystać ze zniżki, otwórz link do rezerwacji i przejdź do opcji „Zarezerwuj pokój”.\n\nWybierz datę nocy weselnej, a następnie w górnej części formularza wpisz kod: AV27.06.26.\n\nZniżka zostanie naliczona automatycznie.",
 
-   "info.title": "Dodatkowe informacje",
-    "info.adultsOnly.title": "Przyjęcie tylko dla dorosłych",
-    "info.adultsOnly.text": "Uprzejmie informujemy, że uroczystość ma charakter wyłącznie dla osób dorosłych.",
+   "info.title": "Dodatkowe informacje",    
     "info.dress.title": "DRESS CODE: BLACK TIE / COCKTAIL",
     "info.dress.text": "Prosimy o elegancki strój wieczorowy.\n\nPanowie: smoking z muszką (preferowany) lub elegancki, ciemny garnitur z krawatem bądź muchą.\n\nPanie: długa suknia wieczorowa, elegancka długość midi lub szykowna sukienka koktajlowa.\n\nUprzejmie prosimy, aby kolor biały oraz ecru pozostawić Pannie Młodej.",
 
@@ -131,8 +129,6 @@
     "hotel.code": "To receive the wedding discount, open the booking link and select “Reserve a room”.\n\nChoose the wedding night date and enter the code AV27.06.26 at the top of the booking page.\n\nThe discount will be applied automatically.",
 
    "info.title": "Additional information",
-    "info.adultsOnly.title": "Adults-only celebration",
-    "info.adultsOnly.text": "We kindly inform you that the celebration will be adults-only.",
     "info.dress.title": "DRESS CODE: BLACK TIE / COCKTAIL",
     "info.dress.text": "We kindly invite you to dress in elegant evening attire.\n\nGentlemen: tuxedo with a bow tie (preferred) or a dark formal suit with tie or bow tie.\n\nLadies: floor-length evening gown, elegant midi length, or a refined cocktail dress.\n\nWe kindly ask guests to leave white and ecru exclusively for the Bride.",
 
@@ -201,8 +197,6 @@
     "hotel.code": "Para aplicar el descuento, abre el enlace de reserva y selecciona “Reservar habitación”.\n\nElige la fecha de la noche de la boda e introduce el código AV27.06.26 en la parte superior de la página.\n\nEl descuento se aplicará automáticamente.",
 
    "info.title": "Información adicional",
-  "info.adultsOnly.title": "Celebración solo para adultos",
-  "info.adultsOnly.text": "Les informamos amablemente que la celebración será exclusivamente para adultos.",
   "info.dress.title": "CÓDIGO DE VESTIMENTA: BLACK TIE / COCKTAIL",
   "info.dress.text": "Les invitamos a vestir con elegancia para la ocasión.\n\nCaballeros: esmoquin con pajarita (preferido) o traje oscuro formal con corbata o pajarita.\n\nSeñoras: vestido largo de noche, vestido midi elegante o vestido de cóctel sofisticado.\n\nLes pedimos amablemente que dejen el blanco y el ecru exclusivamente para la Novia.",
 
@@ -210,6 +204,7 @@
     "footer.made": "¡Nos vemos!"
   }
 }
+
 
 
 
