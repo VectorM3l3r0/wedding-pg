@@ -1,11 +1,12 @@
-const DEFAULT_LANG = "pl";
+  const DEFAULT_LANG = "pl";
 
-const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Pa%C5%82ac%20Alexandrinum";
-const HOTEL_URL = "https://booking.profitroom.com/en/hotelpalacalexandrinum/pricelist/rooms/86187/?check-in=2026-09-02&check-out=2026-09-03&r1_adults=1&auto-dates=1&currency=PLN&_gl=1%2A15hwgi6%2A_ga%2AMTA5MTUyMzY3LjE3NzI2MTkwMjc.%2A_ga_RW48WJ8HEC%2AczE3NzI2MTkwMjYkbzEkZzEkdDE3NzI2MTkxNjUkajQwJGwwJGgw&gclid=CjwKCAiAzZ_NBhAEEiwAMtqKy2o0Jxk0afShPSCAU4eaCTkP0ZaTGI08xFoBfCYUElA7jaXA6CYayhoCidEQAvD_BwE"; // <-- replace with your exact booking/payment link if you have it
+// 1. UPDATE YOUR LINK HERE
+const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Pałac+Alexandrinum";
+const HOTEL_URL = "https://www.palac-alexandrinum.pl/en/packages/price-of-the-day-flexible-offer/"; 
 
 const state = {
   lang: localStorage.getItem("wedding_lang") || DEFAULT_LANG,
-  audioOn: true
+  audioOn: false // Default to false until "Enter" is clicked
 };
 
 async function loadTranslations() {
@@ -27,10 +28,12 @@ function applyTranslations(dict, lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     const value = dict?.[lang]?.[key];
-    if (typeof value === "string") el.textContent = value;
+    if (typeof value === "string") {
+      // FIX: This allows the \n from your JSON to become real line breaks
+      el.innerHTML = value.replace(/\n/g, '<br>'); 
+    }
   });
 
-  // update audio label
   const audioLabel = document.querySelector("#audio-toggle [data-i18n]");
   if (audioLabel) {
     audioLabel.textContent = state.audioOn
@@ -63,16 +66,15 @@ function setupAudio(dict) {
   const enter = document.getElementById("enter");
   const enterBtn = document.getElementById("enter-btn");
 
-  if (!audio) {
-    console.error("Missing #bg-audio element");
-    return;
-  }
+  if (!audio) return;
 
   async function turnOn() {
-    await audio.play();
-    state.audioOn = true;
-    if (toggle) toggle.classList.add("on");
-    applyTranslations(dict, state.lang);
+    try {
+      await audio.play();
+      state.audioOn = true;
+      if (toggle) toggle.classList.add("on");
+      applyTranslations(dict, state.lang);
+    } catch(e) { console.log("Autoplay blocked"); }
   }
 
   function turnOff() {
@@ -82,50 +84,29 @@ function setupAudio(dict) {
     applyTranslations(dict, state.lang);
   }
 
-  async function enterSite() {
-    try {
-      await turnOn();
-    } catch (e) {
-      state.audioOn = false;
-      if (toggle) toggle.classList.remove("on");
-      applyTranslations(dict, state.lang);
-    }
-
-    if (enter) enter.classList.add("hidden");
-  }
-
   if (enterBtn) {
-    enterBtn.addEventListener("click", enterSite);
-  }
-
-  if (enter) {
-    enter.addEventListener("click", (e) => {
-      if (e.target === enter) enterSite();
+    enterBtn.addEventListener("click", async () => {
+      await turnOn();
+      if (enter) enter.classList.add("hidden");
     });
   }
 
   if (toggle) {
-    toggle.addEventListener("click", async () => {
-      try {
-        if (!state.audioOn) await turnOn();
-        else turnOff();
-      } catch (e) {
-        alert("Audio couldn’t play. Check assets/video-games-instrumental.mp3");
-      }
+    toggle.addEventListener("click", () => {
+      if (!state.audioOn) turnOn();
+      else turnOff();
     });
   }
 }
 
 (async function init() {
   setupLinks();
-
-  const dict = await loadTranslations();
-  applyTranslations(dict, state.lang);
-  setupLanguageSwitcher(dict);
-  setupAudio(dict);
+  try {
+    const dict = await loadTranslations();
+    applyTranslations(dict, state.lang);
+    setupLanguageSwitcher(dict);
+    setupAudio(dict);
+  } catch (e) {
+    console.error("Initialization failed", e);
+  }
 })();
-
-
-
-
-
