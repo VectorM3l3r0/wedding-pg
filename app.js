@@ -10,10 +10,12 @@ const state = {
 };
 
 async function loadTranslations() {
-  const res = await fetch("./translations.json", { cache: "no-store" });
+  // Adding ?v=2 forces the browser to bypass the cache for this file
+  const res = await fetch("./translations.json?v=2", { cache: "no-store" });
   if (!res.ok) throw new Error("Cannot load translations.json");
   return res.json();
 }
+
 
 function setLangButtonsActive(lang) {
   document.querySelectorAll(".lang__btn").forEach(b => {
@@ -110,5 +112,6 @@ function setupAudio(dict) {
     console.error("Initialization failed", e);
   }
 })();
+
 
 
