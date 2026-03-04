@@ -2,7 +2,7 @@
 
 // 1. UPDATE YOUR LINK HERE
 const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Pałac+Alexandrinum";
-const HOTEL_URL = "https://www.palac-alexandrinum.pl/en/packages/price-of-the-day-flexible-offer/"; 
+const HOTEL_URL = "https://booking.profitroom.com/en/hotelpalacalexandrinum/pricelist/rooms/86187/?check-in=2026-09-02&check-out=2026-09-03&r1_adults=1&auto-dates=1&currency=PLN&_gl=1%2A15hwgi6%2A_ga%2AMTA5MTUyMzY3LjE3NzI2MTkwMjc.%2A_ga_RW48WJ8HEC%2AczE3NzI2MTkwMjYkbzEkZzEkdDE3NzI2MTkxNjUkajQwJGwwJGgw&gclid=CjwKCAiAzZ_NBhAEEiwAMtqKy2o0Jxk0afShPSCAU4eaCTkP0ZaTGI08xFoBfCYUElA7jaXA6CYayhoCidEQAvD_BwE";
 
 const state = {
   lang: localStorage.getItem("wedding_lang") || DEFAULT_LANG,
@@ -110,3 +110,4 @@ function setupAudio(dict) {
     console.error("Initialization failed", e);
   }
 })();
+
